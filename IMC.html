@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="imc.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .conteiner{
+            background-color: darkgoldenrod;
+            max-width: 430px;
+            padding: 80px;
+            margin: auto;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .return{
+            color: white;
+            background-color: black;
+            padding: auto;
+            padding: 3px 5px;
+
+        }
+        
+        label, input {
+            width: 100%;
+        }
+
+        label {
+            margin-bottom: 3px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            padding: 3px 5px;
+            border-radius: 10px;
+            background-color: rgb(223 211 83);
+        }
+
+        input[type=submit] {
+            background-color: black;
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <form class="conteiner">
+        <h1>Calculadora - IMC</h1>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome">
+        <label for="altura">Altura: </label>
+        <input type="text" id="altura">
+        <label for="peso">Peso: </label>
+        <input type="text" id="peso">
+        <input type="submit" id="button">
+        <div class="return">
+            <p></p>
+        </div>
+    </form>
+    
+</body>
+</html>
